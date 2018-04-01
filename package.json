@@ -2,6 +2,7 @@
   "name": "break-into-ai",
   "version": "3.6.0",
   "description": "Break Into AI: A Series About Machine Learning",
+  "homepage": "https://hebanas.github.io/BreakIntoAI/",
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
@@ -12,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/HebaNAS"
+    "url": "git://github.com/HebaNAS/BreakIntoAI.git"
   },
   "engines": {
     "node": ">=4.0.0"
