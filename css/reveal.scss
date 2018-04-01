@@ -57,6 +57,21 @@ body {
 	color: #000;
 }
 
+/*********************************************
+ * BULMA VARIABLES
+ *********************************************/
+
+$beige: #efdcbc;
+$mauve: #814e73;
+$primary: $beige;
+$link: $mauve;
+
+/*********************************************
+ * BULMA IMPORT
+ *********************************************/
+
+@import "../node_modules/bulma/bulma";
+
 
 /*********************************************
  * VIEW FRAGMENTS
@@ -1714,4 +1729,82 @@ $controlsArrowAngleActive: 36deg;
 
 .zoomed .reveal .roll span:after {
 	visibility: hidden;
+}
+
+/*********************************************
+ * CUSTOM STYLES
+ *********************************************/
+.navbar-height {
+	min-height: 5rem;
+}
+
+.navbar-logo {
+	position: absolute;
+	top: -0.5rem;
+	left: -9rem;
+}
+
+.navbar-logo img {
+	max-height: 5rem;
+}
+
+.reveal {
+	position: inherit;
+}
+
+.reveal section img.no-bg {
+	background: none;
+}
+
+.reveal section img.no-border {
+	border: 0;
+}
+
+.reveal section img.no-shadow {
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.size-50 {
+	width: 20%;
+	height: auto;
+}
+
+.progress, .controls-arrow {
+	position: relative;
+	bottom: 2.5rem !important;
+	color: #814e73 !important;
+}
+
+.controls-arrow {
+	bottom: 3rem !important;
+}
+
+.footer-padding {
+	padding-bottom: 0.5rem;
+}
+
+/*********************************************
+ * MOBILE CUSTOM STYLES
+ *********************************************/
+
+@media screen and (min-width: 1024px) {
+	.navbar.is-dark .navbar-start .navbar-link::after, .navbar.is-dark .navbar-end .navbar-link::after {
+		border-color: #efdcbc;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.navbar-height {
+		min-height: 3rem;
+	}
+
+	.navbar-logo {
+		position: absolute;
+		top: -0.5rem;
+		left: -3rem;
+	}
+	
+	.navbar-logo img {
+		max-height: 3.5rem;
+	}
 }

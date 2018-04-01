@@ -1,11 +1,14 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Break Into AI</title>
 
+		<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+		
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 
@@ -20,14 +23,117 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+		<section class="hero is-fullheight">
+			<!-- Hero head: will stick at the top -->
+			<div class="hero-head">
+				<nav class="navbar is-bordered-bottom has-shadow is-dark">
+					<div class="container">
+						<div class="navbar-brand navbar-height">
+							<a class="navbar-item navbar-logo">
+								<img src="imgs/logo.png" alt="Logo">
+							</a>
+							<span class="navbar-burger burger has-text-primary" data-target="navbar-links">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+						</div>
+						<div id="navbar-links" class="navbar-menu">
+							<div class="navbar-end">
+								<a class="navbar-item is-active has-text-primary">
+									Home
+								</a>
+								<div class="navbar-item has-dropdown is-hoverable">
+									<span class="navbar-link is-hoverable has-text-primary">
+										Docs
+									</span>
+									<div class="navbar-dropdown is-boxed">
+										<a class="navbar-item" href="">
+											Part 1
+										</a>
+										<a class="navbar-item" href="">
+											Part 2
+										</a>
+										<a class="navbar-item" href="">
+											Part 3
+										</a>
+										<a class="navbar-item" href="">
+											Part 4
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
 			</div>
-		</div>
+		
+			<!-- Hero content: will be in the middle -->
+			<div class="hero-body">
+				<div class="reveal">
+					<div class="slides">
+						<section class="">
+							<img class="size-50 no-bg no-border no-shadow" src="imgs/logo-text.png">
+						</section>
+						<section>Slide 2</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="hero-foot footer-padding is-black is-bordered-top has-text-primary">
+				<div class="container">
+					<nav class="level">
+						<!-- Left side -->
+						<div class="level-item">
+							<div class="content has-text-centered">
+								<p>
+									<span class="is-size-7">
+										Made with <span class="icon is-small">
+												<i class="fas fa-heart"></i>
+											</span> by
+									</span>
+									<br>
+									<span class="is-size-7">
+										IBM <span class="has-text-weight-bold">Cloud</span> Developer Advocates - Dubai
+									</span>
+								</p>
+							</div>
+						</div>
+
+						<div class="level-item">
+							<div class="content has-text-centered">
+								<p>
+									<span class="is-size-7">
+										Powered by
+									</span>
+									<br>
+									<img src="https://api.dataplatform.ibm.com/v2/nav/graphics/watson-logo.svg">
+								</p>
+							</div>
+						</div>
+					
+						<!-- Right side -->
+						<div class="level-item">
+							<div class="content has-text-centered">
+								<p>
+									<span class="is-size-7">
+										Built with <a href="https://revealjs.com/"><span class="has-text-weight-semibold">Reveal.js</span></a>
+									</span>
+									<br>
+									<span class="is-size-7 has-text-weight-semibold">
+										Published under MIT License
+									</span>
+								</p>
+							</div>
+						</div>
+					</nav>				
+				</div>
+			</div>
+		</section>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>

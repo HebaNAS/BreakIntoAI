@@ -46,15 +46,15 @@
 			margin: 0.04,
 
 			// Bounds for smallest/largest possible scale to apply to content
-			minScale: 0.2,
-			maxScale: 2.0,
+			minScale: 1,
+			maxScale: 1,
 
 			// Display presentation control arrows
 			controls: true,
 
 			// Help the user learn the controls by providing hints, for example by
 			// bouncing the down arrow when they first encounter a vertical slide
-			controlsTutorial: true,
+			controlsTutorial: false,
 
 			// Determines where controls appear, "edges" or "bottom-right"
 			controlsLayout: 'bottom-right',
