@@ -1764,7 +1764,11 @@ $controlsArrowAngleActive: 36deg;
 	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
-.size-50 {
+.reveal.slides {
+	margin-top: -15px;
+}
+
+.size-20 {
 	width: 20%;
 	height: auto;
 }
@@ -1806,5 +1810,21 @@ $controlsArrowAngleActive: 36deg;
 	
 	.navbar-logo img {
 		max-height: 3.5rem;
+	}
+
+	.size-50 {
+		position: relative;
+		//top: 10%;
+		//left: -20%;
+	}
+
+	.progress, .controls-arrow {
+		position: relative;
+		bottom: 10rem !important;
+		color: #814e73 !important;
+	}
+	
+	.controls-arrow {
+		bottom: 10.5rem !important;
 	}
 }
