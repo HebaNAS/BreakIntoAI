@@ -3134,8 +3134,8 @@ a.box:active {
     height: 1.5rem; }
 
 .table {
-  background-color: white;
-  color: #363636;
+  background-color: none;
+  color: #efdcbc;
   margin-bottom: 1.5rem; }
   .table td,
   .table th {
@@ -8398,16 +8398,38 @@ label.panel-block {
   background: none; }
 
 .reveal section img.no-border {
-  border: 0; }
+  border: none !important; }
 
 .reveal section img.no-shadow {
   box-shadow: 0 0 0 transparent; }
 
-.reveal.slides {
-  margin-top: -15px; }
+.reveal table {
+  width: 960px;
+  max-height: 400px; }
+
+.reveal table td {
+  text-align: center !important;
+  vertical-align: middle;
+  border: none !important;
+  width: 200px;
+  height: 195px; }
+
+.reveal table td img {
+  width: 200px;
+  height: 195px; }
+
+.reveal table td.caption {
+  position: relative;
+  top: -50px;
+  vertical-align: top !important;
+  padding: 0 20px 0 20px; }
 
 .size-20 {
   width: 20%;
+  height: auto; }
+
+.size-50 {
+  width: 50%;
   height: auto; }
 
 .progress, .controls-arrow {
