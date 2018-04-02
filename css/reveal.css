@@ -8420,9 +8420,10 @@ label.panel-block {
 
 .reveal table td.caption {
   position: relative;
-  top: -50px;
+  top: -40px;
   vertical-align: top !important;
-  padding: 0 20px 0 20px; }
+  padding: 0 20px 0 20px;
+  line-height: 1.5rem !important; }
 
 .size-20 {
   width: 20%;
