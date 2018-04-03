@@ -8574,21 +8574,21 @@ label.panel-block {
 .pc-task {
   position: relative; }
 
-#data-animation {
+#data-animation, #data-animation-dl {
   opacity: 0;
   position: absolute;
   left: 0;
   color: #efdcbc;
   animation: fade 2s ease infinite, slide 2s ease infinite; }
 
-#performance-animation {
+#performance-animation, #performance-animation-dl {
   opacity: 0;
   position: absolute;
   right: 20%;
   color: #efdcbc;
   animation: fade-slow 2s ease infinite, slide-inverse 2s ease infinite; }
 
-#experience-animation {
+#experience-animation, #experience-animation-dl {
   opacity: 0;
   position: absolute;
   top: 15%;
@@ -8632,7 +8632,7 @@ label.panel-block {
   50% {
     right: 20%; }
   100% {
-    right: -5%; } }
+    right: -10%; } }
 
 @keyframes slide-up {
   0% {
@@ -8641,6 +8641,14 @@ label.panel-block {
     top: 10%; }
   100% {
     top: 0; } }
+
+.side-by-side {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .progress, .controls-arrow {
   position: relative;

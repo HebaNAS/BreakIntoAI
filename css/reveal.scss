@@ -1958,7 +1958,7 @@ $controlsArrowAngleActive: 36deg;
 	position: relative;
 }
 
-#data-animation {
+#data-animation, #data-animation-dl {
 	opacity: 0;
 	position: absolute;
 	left: 0;
@@ -1966,7 +1966,7 @@ $controlsArrowAngleActive: 36deg;
 	animation: fade 2s ease infinite, slide 2s ease infinite;
 }
 
-#performance-animation {
+#performance-animation, #performance-animation-dl {
 	opacity: 0;
 	position: absolute;
 	right: 20%;
@@ -1974,7 +1974,7 @@ $controlsArrowAngleActive: 36deg;
 	animation: fade-slow 2s ease infinite, slide-inverse 2s ease infinite;
 }
 
-#experience-animation {
+#experience-animation, #experience-animation-dl {
 	opacity: 0;
 	position: absolute;
 	top: 15%;
@@ -2036,7 +2036,7 @@ $controlsArrowAngleActive: 36deg;
 		right: 20%;
 	}
   100% {
-		right: -5%;
+		right: -10%;
   }
 }
 
@@ -2050,6 +2050,12 @@ $controlsArrowAngleActive: 36deg;
   100% {
 		top: 0;
   }
+}
+
+.side-by-side {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
 }
 
 .progress, .controls-arrow {
