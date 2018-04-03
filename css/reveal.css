@@ -8452,6 +8452,13 @@ label.panel-block {
   width: 120%;
   height: auto; }
 
+.in-place {
+  position: inherit;
+  left: 0;
+  z-index: 14;
+  width: 100%;
+  height: auto; }
+
 .ai-description {
   width: 95vw;
   height: 600px; }
