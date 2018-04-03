@@ -1949,6 +1949,109 @@ $controlsArrowAngleActive: 36deg;
 	text-align: left;
 }
 
+.move-up {
+	position: relative;
+	top: -120px;
+}
+
+.pc-task {
+	position: relative;
+}
+
+#data-animation {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	color: $beige;
+	animation: fade 2s ease infinite, slide 2s ease infinite;
+}
+
+#performance-animation {
+	opacity: 0;
+	position: absolute;
+	right: 20%;
+	color: $beige;
+	animation: fade-slow 2s ease infinite, slide-inverse 2s ease infinite;
+}
+
+#experience-animation {
+	opacity: 0;
+	position: absolute;
+	top: 15%;
+	left: 40%;
+	color: $beige;
+	animation: fade-slower 2s ease infinite, slide-up 2s ease infinite;
+}
+
+@keyframes fade {
+  0% {
+		opacity: 0;
+  }
+  50% {
+    opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-slow {
+  0% {
+		opacity: 0;
+  }
+  70% {
+    opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-slower {
+  0% {
+		opacity: 0;
+  }
+  80% {
+    opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes slide {
+  0% {
+		left: 0;
+  }
+  100% {
+		left: 30%;
+  }
+}
+
+@keyframes slide-inverse {
+  0% {
+		right: 20%;
+	}
+	50% {
+		right: 20%;
+	}
+  100% {
+		right: -5%;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+		top: 15%;
+	}
+	50% {
+		top: 10%;
+	}
+  100% {
+		top: 0;
+  }
+}
+
 .progress, .controls-arrow {
 	position: relative;
 	bottom: 2.5rem !important;

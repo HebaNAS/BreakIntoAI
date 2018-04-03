@@ -29,8 +29,11 @@ module.exports = function(grunt) {
 				screwIE8: false
 			},
 			build: {
-				src: 'js/reveal.js',
-				dest: 'js/reveal.min.js'
+				files: grunt.file.expandMapping(['js/reveal.js', 'js/animations.js'], './', {
+					rename: function(destBase, destPath) {
+							return destBase+destPath.replace('.js', '.min.js');
+					}
+				})
 			}
 		},
 
@@ -87,7 +90,7 @@ module.exports = function(grunt) {
 					exports: false
 				}
 			},
-			files: [ 'Gruntfile.js', 'js/reveal.js' ]
+			files: [ 'Gruntfile.js', 'js/reveal.js', 'js/animations.js' ]
 		},
 
 		connect: {
@@ -119,7 +122,7 @@ module.exports = function(grunt) {
 
 		watch: {
 			js: {
-				files: [ 'Gruntfile.js', 'js/reveal.js' ],
+				files: [ 'Gruntfile.js', 'js/reveal.js', 'js/animations.js' ],
 				tasks: 'js'
 			},
 			theme: {
@@ -147,7 +150,7 @@ module.exports = function(grunt) {
 		},
 
 		retire: {
-			js: [ 'js/reveal.js', 'lib/js/*.js', 'plugin/**/*.js' ],
+			js: [ 'js/reveal.js', 'js/animations.js', 'lib/js/*.js', 'plugin/**/*.js' ],
 			node: [ '.' ]
 		}
 
