@@ -1758,6 +1758,7 @@ $controlsArrowAngleActive: 36deg;
 
 .reveal section {
 	margin-top: 3rem;
+	line-height: 1.8rem !important;
 }
 
 .reveal section img.no-bg {
@@ -1820,6 +1821,16 @@ $controlsArrowAngleActive: 36deg;
 
 .size-50 {
 	width: 50%;
+	height: auto;
+}
+
+.size-70 {
+	width: 70%;
+	height: auto;
+}
+
+.size-100 {
+	width: 100%;
 	height: auto;
 }
 
@@ -1951,7 +1962,7 @@ $controlsArrowAngleActive: 36deg;
 
 .move-up {
 	position: relative;
-	top: -120px;
+	top: -10vh;
 }
 
 .pc-task {

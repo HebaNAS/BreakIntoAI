@@ -291,7 +291,7 @@
 						</section>
 
 						<!-- Slide 15 -->
-						<section id="15">
+						<section id="15" data-transition="zoom">
 							<h4 class="move-up">Machine Learning</h4>
 							<span id="experience-animation">+ Experience</span>
 							<div class="level">
@@ -305,44 +305,128 @@
 						</section>
 
 						<!-- Slide 16 -->
-						<section id="16" data-transition="zoom">
+						<section id="16">
+							<h3>What does a Machine do with the Data?</h3>
+							<span class="is-size-3">And how does it actually learn?</span>
+						</section>
+
+						<!-- Slide 17 -->
+						<section id="17">
+							<h3>What does a Machine do with the Data?</h3>
+							<span class="is-size-3">And how does it actually learn?</span>
+						</section>
+
+						<!-- Slide 18 -->
+						<section id="18">
+							<span class="is-size-3">A Machine tries to find a relationship from the input (X) to the ouput (Y)</span>
+							<img class="no-bg no-border no-shadow size-50" src="imgs/fit-data.gif" alt="Finding a Model">
+							<br>
+							<span class="is-size-3">This process is called developing a <span class="has-text-primary">Model*</span> from the data, and it is up to the <span class="has-text-primary">Machine Learning Algorithm*</span> to find that Model</span>
+							<br>
+							<p class="is-size-5">*Model: is a representation of a real-world process. It helps explain a system, study the effects of different components, and to make predictions about future behaviour</p>
+							<p class="is-size-5">*Algorithm: a set of steps to follow by a program to solve a problem</p>
+						</section>
+
+						<!-- Slide 19 -->
+						<section id="19">
+							<h4>How does the Machine learn to get the best Model?</h4>
+							<p class="fragment">Through configurable parameters</p>
+						</section>
+
+						<!-- Slide 20 -->
+						<section id="20">
+							<h4>Let's take an example</h4>
+							<span class="is-size-3">Below is a simple Linear Regression</span>
+							<img class="no-bg no-border no-shadow size-50" src="imgs/linear-regression.png" alt="Linear Regression">
+							<br>
+							<span class="is-size-3">This model can be represented as</span>
+							<p>Y = aX + b</p>
+							<p class="is-size-3">where "a" is the slope and "b" is the intercept.</p>
+							<span class="is-size-3">Both "a" and "b" are <span class="has-text-primary">Configurable Parameters</span> that the learning algorithm can tune to find the best Model</span>
+						</section>
+
+						<!-- Slide 21 -->
+						<section id="21">
+							<h4>How does a Learning Algorithm know it is correct?</h4>
+							<span class="is-size-3">We measure its Performance by calculating a <span class="has-text-primary">Cost Function</span></span>
+							<img class="no-bg no-border no-shadow size-30" src="imgs/dial.gif" alt="Measure Performance">
+							<p class="is-size-4">Simply put, it is a way to estimate how wrong is the Model we have now in terms of estimating the relationship between the input (X) and the output (Y)</p>
+							<p class="is-size-4">The Learning Algorithm's mission is to find Parameters that <span class="has-text-primary">minimize</span> the cost function</p>
+						</section>
+
+						<!-- Slide 22 -->
+						<section id="22">
+							<img class="no-bg no-border no-shadow size-70 move-up" src="imgs/train.gif" alt="Model Training">
+						</section>
+
+						<!-- Slide 23 -->
+						<section id="23">
+							<h4>This process is called <span class="has-text-primary">Model Training</span></h4>
+							<p class="is-size-3">By the end of this process, we have a model that describes relationships in our data, now we can use that model to predict an output (that we don't know) from new input (future data)</p>
+							<br>
+							<h3 class="fragment has-text-primary">That's the essence of AI</h3>
+						</section>
+
+						<!-- Slide 24 -->
+						<section id="24">
+							<h4></h4>
+						</section>
+
+						<!-- Slide 30 -->
+						<section id="30" data-transition="zoom">
 							<h4 class="move-up">Deep Learning</h4>
 							<span id="experience-animation-dl">+ Experience</span>
 							<div class="level">
 								<span id="data-animation-dl" class="level-item">Data&nbsp; <i class="fas fa-file-alt"></i></span>
 								<span class="ai level-item pc-task">
 									<img class="no-bg no-border no-shadow" src="imgs/nn.gif" alt="Computer Performing a Task">
-									<span id="task-animation">Task&nbsp; <i class="fas fa-cog fa-spin"></i></span>
+									<span id="task-animation-dl">Task&nbsp; <i class="fas fa-cog fa-spin"></i></span>
 								</span>
 								<span id="performance-animation-dl" class="level-item">Performance&nbsp; <i class="fas fa-thumbs-up"></i></span>
 							</div>
 						</section>
 
-						<!-- Slide 17 -->
-						<section id="17">
+						<!-- Slide 31 -->
+						<section id="31">
 							<h4>Building block of a Neural Network</h4>
 							<img class="no-bg no-border no-shadow" src="imgs/neuron.gif" alt="Artificial Neuron">
 						</section>
 
-						<!-- Slide 18 -->
-						<section id="18">
+						<!-- Slide 32 -->
+						<section id="33">
 							<h4>Comparing Artificial Neuron to a Human Neuron</h4>
 							<img class="no-bg no-border no-shadow size-120" src="imgs/human-neuron.gif" alt="Human Neuron">
 						</section>
 
-						<!-- Slide 19 -->
-						<section id="19">
+						<!-- Slide 34 -->
+						<section id="34">
 							<h4>Stacking Many Neurons Together</h4>
+							<br>
 							<div class="side-by-side">
 								<div class="ai">
 									<span class="is-size-3">Humans</span>
 									<img class="no-bg no-border no-shadow" src="imgs/brain.gif" alt="Human Brain">
+									<p class="is-size-3">~100-1,000 Trillion synapses</p>
 								</div>
 								<div class="ai">
 									<span class="is-size-3">Deep Neural Network</span>
 									<img class="no-bg no-border no-shadow" src="imgs/dnn.gif" alt="Deep Neural Network">
+									<p class="is-size-3">~1-10 Billion Artificial Neurons</p>
 								</div>
 							</div>
+							<span class="is-size-4">Humans have ~10,000 times more computational power than the most powerful "computer brains"</span>
+						</section>
+
+						<!-- Slide 35 -->
+						<section id="35">
+							<h3>Where's the magic?</h3>
+							<span class="is-size-3">How does learning actually happen?</span>
+						</section>
+
+						<!-- Slide 36 -->
+						<section id="36">
+							<h3>Where's the magic?</h3>
+							<span class="is-size-3">How does learning actually happen?</span>
 						</section>
 					</div>
 				</div>
