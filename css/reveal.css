@@ -8659,6 +8659,9 @@ label.panel-block {
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
+.no-bullets {
+  list-style-type: none; }
+
 .progress, .controls-arrow {
   position: relative;
   bottom: 2.5rem !important;
